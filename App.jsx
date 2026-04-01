@@ -3,18 +3,6 @@ import { languages } from "./languages"
 import { clsx } from "clsx"
 import { getFarewellText, getRandomWord } from "./utils"
 
-/**
- * Goal: Add in the incorrect guesses mechanism to the game
- * 
- * Challenge:
- * 1. Create a variable `isGameOver` which evaluates to `true`
- *    if the user has guessed incorrectly 8 times. Consider how
- *    we might make this more dynamic if we were ever to add or
- *    remove languages from the languages array.
- * 2. Conditionally render the New Game button only if the game
- *    is over.
- */
-
 export default function AssemblyEndgame() {
 
   const [currentWord, setCurrentWord] = React.useState(() => getRandomWord())
